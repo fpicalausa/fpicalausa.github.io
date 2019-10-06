@@ -6,7 +6,7 @@ author: fpicalausa
 
 This is the second article in a series about building a remote control for a air
 conditioner over the internet. Check
-[Part 1](2019-10-06-Controlling-an-air-conditioner-remotely.md) for the
+[Part 1](/2019/10/06/Controlling-an-air-conditioner-remotely.html) for the
 overview.
 
 # What are we trying to build?
