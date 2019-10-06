@@ -4,9 +4,10 @@ title: What are we trying to build? - Air conditioner remote control
 author: fpicalausa
 ---
 
-This is the first article in a series about building a remote control for a air
-conditioner over the internet. Check the [figure out the link](overview article)
-if you want more details.
+This is the second article in a series about building a remote control for a air
+conditioner over the internet. Check
+[Part 1](2019-10-06-Controlling-an-air-conditioner-remotely.md) for the
+overview.
 
 # What are we trying to build?
 
@@ -22,7 +23,7 @@ interrace (a plain looking remote control). Fun fact: most phone cameras will
 pick up infrared. Point your phone camera at the remote control LED, press a
 button on the remote, and the camera should show the LED blinking.
 
-Given these, here is the mental model I came up with:
+Given these, here is my mental model of what I wanted:
 ![Overview diagram]({{ site.url }}/assets/remote-control-overview.svg)
 
 In addition to the transmitter, we'll also need to be able to read (and decode!)
