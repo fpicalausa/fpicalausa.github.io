@@ -34,6 +34,7 @@ are expected.
 
 For this project, here are the components I used:
 
+-   A Fujitsu AS-E4007T air conditioner
 -   Raspberry Pi 3b+
 -   A breadboard, a Raspberry Pi breadboard connector, a 10 wires
 -   (IR transmitter) Vishay TSHF5410 infrared LED

@@ -15,7 +15,7 @@ To control our air conditioner, through infrared, we first need an understanding
 of how the air conditioner communicates with its remote. That is, we want a
 general understanding of its transport, and of its protocol.
 
-One of the popular wait of transporting signals of 0's and 1's over infrared is
+One of the popular way of transporting signals of 0's and 1's over infrared is
 called pulse distance encoding. It's also how many air conditioning units
 communicate. The transport is as follows: we decide in advance of a certain
 duration to encode a 1, and then a different duration (typically shorter) for
@@ -34,6 +34,9 @@ mark and space).
 For practical reasons, if we did turn on the LED continuously for the whole
 mark, it would be hard to distinguish from background noise. This is why most IR
 signals are instead sent while making the LED flick at a distinct frequency.
+This frequency can be efficiently filtered by an air conditioner using a passive
+band-pass filter.
+
 38kHz is a common frequency for this. With this in mind, the above signal would
 actually look as follows:
 
@@ -100,7 +103,8 @@ pulse 463
 
 Protocol overview
 
-1. https://techdocs.altium.com/display/FPGA/Infrared+Communication+Concepts
-2. https://www.instructables.com/id/Reverse-engineering-of-an-Air-Conditioning-control/
-3. https://blog.bschwind.com/2016/05/29/sending-infrared-commands-from-a-raspberry-pi-without-lirc/
-4. LIRC [mode2 man page](http://www.lirc.org/html/mode2.html)
+1. [NXP's description of IR protocols](https://www.nxp.com/docs/en/application-note/AN3053.pdf).
+   The Distance Encoding is further explained in this document.
+2. [This instructable](https://www.instructables.com/id/Reverse-engineering-of-an-Air-Conditioning-control/)
+   describes the process of reading infrared signals.
+3. LIRC [mode2 man page](http://www.lirc.org/html/mode2.html)
