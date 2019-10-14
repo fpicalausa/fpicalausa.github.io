@@ -9,8 +9,6 @@ conditioner over the internet. Check
 [Part 1](/2019/10/06/Controlling-an-air-conditioner-remotely.html) for the
 overview.
 
-# Reading infrared signals
-
 To control our air conditioner, through infrared, we first need an understanding
 of how the air conditioner communicates with its remote. That is, we want a
 general understanding of its transport, and of its protocol.
@@ -45,7 +43,7 @@ actually look as follows:
 Fortunately, most infrared receivers actually decode this 38kHz signal into
 larger marks and spaces, so we rarely have to deal with the raw signal.
 
-# Receiving IR signals
+## Receiving IR signals
 
 Here are the components, and circuit I used to test out if I could receive IR
 signals from the air conditioner remote control.
@@ -99,7 +97,7 @@ space 381
 pulse 463
 ```
 
-# References
+## References
 
 Protocol overview
 

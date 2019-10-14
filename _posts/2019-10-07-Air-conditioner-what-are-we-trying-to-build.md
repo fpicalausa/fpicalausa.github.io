@@ -9,8 +9,6 @@ conditioner over the internet. Check
 [Part 1](/2019/10/06/Controlling-an-air-conditioner-remotely.html) for the
 overview.
 
-# What are we trying to build?
-
 Our system should be able to change the air conditioner settings from a web
 interface. I have a Raspberry Pi 3b+, so I will be using it for this project.
 Now, changing the settings is useful, but without a good idea of the current
@@ -30,7 +28,7 @@ In addition to the transmitter, we'll also need to be able to read (and decode!)
 infrared signal from the original remote control, so that we know what signals
 are expected.
 
-# Bill of material
+## Bill of material
 
 For this project, here are the components I used:
 

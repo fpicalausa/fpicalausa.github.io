@@ -27,8 +27,8 @@ infrared remote control for my air conditioner.
 (tentative)
 
 1. [What are we trying to build? (and a bill of material)](/2019/10/07/Air-conditioner-what-are-we-trying-to-build.html)
-2. Reading infrared signals
-3. Controlling an infrared LED from a raspberry pi
+2. [Reading infrared signals](/2019/10/08/Reading-Infrared-Signals.html)
+3. [Controlling an infrared LED from a raspberry pi](/2019/10/15/Controlling-an-Infrared-LED.html)
 4. Decoding the air conditioner protocol (Fujitsu AS-E4007T)
 5. Talking to the air conditioner
 6. DHT11 for decision making
