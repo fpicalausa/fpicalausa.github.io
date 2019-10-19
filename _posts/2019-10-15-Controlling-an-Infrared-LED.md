@@ -30,23 +30,22 @@ right amount of time to encode 0's and 1's.
 
 Powering a LED is usually as simple as making sure that you can provide the
 right current to it. The more current provided, the higher the radiant power you get
-(how "bright" the LED turns on). Going over a certain current, however, will
+(that is the LED gets "brighter"). Going over a certain current, however, will
 damage the LED. The specific current depends on the pulse length and how fast
 the pulse is repeated.
 
-Since we are sending IR signals at 38kHz, the we repeat the pulse every
-$T = 32 \mathrm{\mu s}$. The plan is to turn the LED on for half the time,
-that is $t_p = 16\mathrm{\mu s}$. Looking at the datasheet, for $t_p/T = 0.5$,
+Since we are sending IR signals at 38kHz, we repeat the pulse every
+$T = 32 \mathrm{\mu s}$. The plan is to turn the LED on for half the time or $t_p = 16\mathrm{\mu s}$. Looking at the datasheet, for $t_p/T = 0.5$,
 and a pulse of $16\mathrm{\mu s}$, a current less than 200mA won't damage the LED.
 
-The GPIO pins, can only provide 16mA maximum without being damaged (there is
-also a maximum of 51mA across all pins). The 5V pins are linked directly to the
+The GPIO pins of the rasberry pi can only provide 16mA maximum without being damaged. 
+The 5V pins are linked directly to the
 power source, allowing to draw more current. This means that we need to power
-the LED through 5V pin, while controlling the signal from one of the GPIO.
+the LED through a 5V pin, while controlling the signal from one of the GPIO.
 
 ## Transistor controlled signal
 
-A transistor can be though of as a current-operated switch. It has three
+A transistor can be thought of as a current-operated switch. Transistors have three
 connections: the base, the emitter and the collector.
 
 - When there is no current at the base, no current flows between the emitter
