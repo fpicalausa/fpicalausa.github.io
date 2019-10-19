@@ -29,7 +29,7 @@ right amount of time to encode 0's and 1's.
 ## Powering the LED
 
 Powering a LED is usually as simple as making sure that you can provide the
-right current to it. The more current provided, the higher the radiant power
+right current to it. The more current provided, the higher the radiant power you get
 (how "bright" the LED turns on). Going over a certain current, however, will
 damage the LED. The specific current depends on the pulse length and how fast
 the pulse is repeated.
