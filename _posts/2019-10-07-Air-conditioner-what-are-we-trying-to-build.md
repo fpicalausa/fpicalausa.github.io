@@ -32,9 +32,9 @@ are expected.
 
 For this project, here are the components I used:
 
--   A Fujitsu AS-E4007T air conditioner
+-   Fujitsu AS-E4007T air conditioner, and its AR-NE1 remote
 -   Raspberry Pi 3b+
--   A breadboard, a Raspberry Pi breadboard connector, a 10 wires
+-   Breadboard, a Raspberry Pi breadboard connector, 10 wires
 -   (IR transmitter) Vishay TSHF5410 infrared LED
 -   (IR transmitter) Fairchild 2N4401 transistor
 -   (IR transmitter) 1.5 kOhm resistor

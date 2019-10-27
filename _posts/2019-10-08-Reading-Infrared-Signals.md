@@ -48,9 +48,9 @@ larger marks and spaces, so we rarely have to deal with the raw signal.
 Here are the components, and circuit I used to test out if I could receive IR
 signals from the air conditioner remote control.
 
--   Raspberry Pi 3b+
--   A breadboard, a Raspberry Pi breadboard connector, a 10 wires
--   (IR receiver) VS1838B infrared receiver module
+- Raspberry Pi 3b+
+- A breadboard, a Raspberry Pi breadboard connector, a 10 wires
+- (IR receiver) VS1838B infrared receiver module
 
 ![Infrared reader]({{ site.url }}/assets/infrared-read.svg)
 
@@ -61,13 +61,13 @@ infrared input and output.
 
 First, install LIRC:
 
-```
+```sh
 sudo apt-get install lirc
 ```
 
 Enable the IR interface in your `/boot/config.txt`:
 
-```
+```txt
 dtoverlay=gpio-ir,gpio_pin=17
 ```
 
@@ -78,7 +78,7 @@ After rebooting your raspberry pi, you should have a new `/dev/lirc0` device.
 You can check if you can receive infrared signals by using the `mode2` tool,
 which will helpfully write the different marks (pulses) and spaces duration:
 
-```
+```sh
 mode2 --device /dev/lirc0
 ```
 
