@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Controlling an Infrared LED - Air conditioner remote control
+title: Decoding the protocol - Air conditioner remote control
 author: fpicalausa
 ---
 
